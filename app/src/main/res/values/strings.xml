@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Popular Movie</string>
+    <string name="textviewString">TextView</string>
+    <string name="title">title</string>
+    <string name="trailor">Trailor</string>
+    <string name="information">Information</string>
+    <string name="high_ratings">High Ratings</string>
+    <string name="up_coming">Up Coming</string>
+    <string name="action_favorite">Favorite</string>
+</resources>

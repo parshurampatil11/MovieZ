@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detailLayout"
+    android:background="@color/black"
+    tools:context=".Activity.MovieDetailsActivity">
+
+
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/info"
+        android:text="@string/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/poster"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+    <Button
+        android:id="@+id/trailorButton"
+        android:text="@string/trailor"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/date"
+        android:layout_toEndOf="@id/date"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="130dp"
+        android:backgroundTint="@color/cardview_dark_background"/>
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/reviewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review > > >"
+        android:layout_margin="20dp"
+        android:layout_below="@id/overview"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:shadowRadius="@android:integer/config_longAnimTime"/>
+</RelativeLayout>
+</ScrollView>
